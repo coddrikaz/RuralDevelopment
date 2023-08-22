@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/trainingView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center|left"
+                    android:elevation="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_baseline_camera_alt_24"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_training"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:text="Training Name"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tvNameofTraining"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Training Name"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.1"
+                                            android:text="Trainer Name"
+                                            android:textColor="@color/black"
+                                            android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tvNameofTrainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Name of Trainer"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_weight="1.1"-->
+                    <!--                        android:text="Start Date"-->
+                    <!--                        android:textColor="@color/black"-->
+                    <!--                        android:textSize="13dp" />-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.1"
+                        android:text="Training Date"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tvStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Training Date"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_weight="1.1"-->
+                    <!--                        android:text="End Date"-->
+                    <!--                        android:textColor="@color/black"-->
+                    <!--                        android:textSize="13dp" />-->
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tvEndDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="End Date"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:text="Total Participant"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalAttendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Total Attendance"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/btnDlt"-->
+                <!--                    android:layout_width="25dp"-->
+                <!--                    android:layout_height="25dp"-->
+                <!--                    android:layout_marginBottom="15dp"-->
+                <!--                    android:src="@drawable/ic_baseline_delete_24">-->
+
+                <!--                </ImageView>-->
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/btnEdit"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_baseline_edit_24">
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

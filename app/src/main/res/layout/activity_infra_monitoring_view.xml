@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity.Infra_Monitoring_view">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/view_layout"
+        android:elevation="100dp"
+        app:cardElevation="80dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/sliderview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderAutoCycleEnabled="true"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="15dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="2"
+                        app:sliderStartAutoCycle="true">
+
+                    </com.smarteist.autoimageslider.SliderView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/textview_backlground">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="INFRASTRUCTURE MONITOR DETAILS"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Village"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tv_village_aa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="19dp"
+                    android:textColor="@color/uiColor"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Date Monitoring "
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/tv_Monitoring_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="19dp"
+                    android:textColor="@color/blue"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Resource Name"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvStructureName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="19dp"
+                    android:textColor="@color/blue"
+                    android:textSize="13dp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_quesion_Emuskan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="is it Installation"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_school_Installation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="19dp"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="3dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="is it  funtional"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_school_undertaken"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="19dp"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="3dp"
+
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="is it damaged"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tvkitchen_garden"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="19dp"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="3dp"
+
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="is there any Visibility of Jubilant"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tvscience_lab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="19dp"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginBottom="3dp"-->
+
+<!--                android:weightSum="2">-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Is there any visibility of Jubilant brand ?"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="13dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_emuskan"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:paddingLeft="19dp"-->
+<!--                    android:textColor="@color/blue"-->
+<!--                    android:textSize="13dp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginBottom="3dp"-->
+
+<!--                android:weightSum="2">-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="is there installed library"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="13dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_installed_library"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:paddingLeft="19dp"-->
+<!--                    android:textColor="@color/blue"-->
+<!--                    android:textSize="13dp" />-->
+
+<!--            </LinearLayout>-->
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

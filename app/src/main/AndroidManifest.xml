@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.indev.ruraldevelopment">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        android:minSdkVersion="30" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.front" />
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupOnly="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RuralDevelopment"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".Activity.BaselineViewDetails"
+            android:exported="false" />
+        <activity
+            android:name=".BaselineView"
+            android:exported="false" />
+        <activity
+            android:name=".BaselineListing"
+            android:exported="false" />
+        <activity
+            android:name=".baseline_Listing"
+            android:exported="false" />
+        <activity
+            android:name=".baseline_question"
+            android:exported="false" />
+        <activity
+            android:name=".Infra_baseline"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Infra_Monitoring_view"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.Activity.InfraStraMonitoringList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.Activity.AddInfraStructureMonitoring"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.Activity.ImagePickerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <activity
+            android:name=".Activity.Activity.App_drawer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Help"
+            android:exported="false"
+            android:parentActivityName=".Activity.Activity.Main_Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.TrainingView"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.CommitteeMemberView"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Synchronize"
+            android:exported="true"
+            android:parentActivityName=".Activity.Activity.Main_Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.InfraView"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Moniter_View"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Resorces_view"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.ForgotPassword"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.ViewVillageProfile"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.List_of_stakeholder_survey"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.StakeHolderSurvey"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.List_of_InfraStructure"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.AddInfraStructure"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.List_of_Training"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.AddTraining"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.List_of_Village_profile"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.AddVillageProfile"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.VillageDetails"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.ServeyView"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.List_of_monitor_resources"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Monitor_resources"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.List_of_resources"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Add_resources"
+            android:exported="true"
+            android:parentActivityName=".Activity.Activity.List_of_resources"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Add_members"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.List_of_committee_member"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Main_Menu"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.SelectVillage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Login"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Activity.Splash_screen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

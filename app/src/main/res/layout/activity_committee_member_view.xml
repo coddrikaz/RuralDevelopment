@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity.CommitteeMemberView">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/view_layout"
+        android:elevation="100dp"
+        app:cardElevation="80dp"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                <com.jsibbold.zoomage.ZoomageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/comitee_member"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        app:zoomage_restrictBounds="false"
+                        app:zoomage_animateOnReset="true"
+                        app:zoomage_autoResetMode="UNDER"
+                        app:zoomage_zoomable="true"
+                        app:zoomage_translatable="true"
+                        app:zoomage_minScale="0.6"
+                        app:zoomage_maxScale="8"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/textview_backlground">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="COMMITTEE MEMBER DETAILS"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Member Name "
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+                <TextView
+                    android:id="@+id/tvMemberName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="19dp"
+                    android:textColor="@color/blue"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:weightSum="2">-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:text="Resource Status"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="@color/gray"-->
+            <!--                    android:textSize="15dp" />-->
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tvResourceStatus"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:paddingLeft="19dp"-->
+
+            <!--                    android:textColor="@color/blue"-->
+            <!--                    android:textSize="15dp" />-->
+
+
+
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Mobile Number"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvMemberMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="19dp"
+                    android:textColor="@color/blue"
+                    android:textSize="13dp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Member Role"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tvRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="19dp"
+                    android:textColor="@color/blue"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

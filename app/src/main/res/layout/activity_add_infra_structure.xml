@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activity.Activity.AddInfraStructure">
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Village "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_village"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Resource Type "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spnResource"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_background" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sub Resource Type"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/etSiteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_background" />
+            </LinearLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/etSiteName"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/edit_text"-->
+<!--                android:hint="Enter sit name"-->
+<!--                android:inputType="text"-->
+<!--                android:padding="10dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="15dp" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Infra Structure Name"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etNameoftheInfra"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="Enter InfraStructure Name"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Caretaker Name"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etCaretakerName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="Enter Caretaker Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Mobile Number"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Date"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:drawableRight="@drawable/ic_baseline_date_range_24"
+                android:padding="10dp"
+                android:text="Select  Date"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="End Date"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="15dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvEndDate"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/edit_text"-->
+<!--                android:drawableRight="@drawable/ic_baseline_date_range_24"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="Select End Date"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="15dp" />-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Address "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="Enter Address"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Amount "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etAmount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="Enter Amount"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Expected Benefits "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etExpected_beneficial"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="Enter Expected Beneficial"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Description "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/edit_text"
+                android:gravity="center_vertical|top"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Upload Photo "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/iv_camera"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_baseline_camera_alt_24"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/btnSubmit"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_search"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

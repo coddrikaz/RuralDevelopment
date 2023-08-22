@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Activity.Login"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/logo"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ruraldevelopment" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="310dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/uiColor"
+            android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Rural Development"
+                android:textSize="15dp"
+                android:textColor="@color/uiColor"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_user_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:errorEnabled="true"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmailLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/uiColor"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="5dp"
+                    android:hint="Username" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_user_name"
+                app:passwordToggleEnabled="false"
+                android:backgroundTint="@color/uiColor"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPassword" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Show Password"
+                android:textColor="@color/uiColor"
+                app:layout_constraintBottom_toTopOf="@+id/btnLogIn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_password" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogIn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/uiColor"
+                android:text="Login"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginTop="50dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_password" />
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:id="@+id/tv_forgot_password"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="96dp"-->
+<!--                android:text="Forgot Password?"-->
+<!--                android:textColor="@color/uiColor"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/btnLogIn"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bg1"/>
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>

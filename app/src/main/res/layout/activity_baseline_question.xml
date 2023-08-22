@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".baseline_question">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Village "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_village"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Resource Type "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_Resource_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sub Resource Type "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_SubResource_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Infra Structure Name "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_infraName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text=" Date of Baseline "
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/etStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableRight="@drawable/calendar"
+                android:background="@drawable/edit_text"
+                android:hint="Enter Monitoring Date "
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_quesion"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="visible"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:text="is the structure funtional ?"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="15dp" />-->
+
+<!--                <RadioGroup-->
+<!--                    android:id="@+id/rg_near_the_structure"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/rv_yes"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Yes"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/rv_No"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="No"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </RadioGroup>-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:text="Is there any sewage in the pond from the village ?"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="15dp" />-->
+
+<!--                <RadioGroup-->
+<!--                    android:id="@+id/rg_village"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/rv_village"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Yes"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/rv_noVillage"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="No"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </RadioGroup>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:text="is the Structure  Damaged ?"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="15dp" />-->
+
+<!--                <RadioGroup-->
+<!--                    android:id="@+id/rg_damaged"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/rv_damaged"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Yes"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <RadioButton-->
+<!--                        android:id="@+id/rv_damaged_i"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="No"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+<!--                </RadioGroup>-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Is there any visibility of Jubilant brand ?"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="15dp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <RadioGroup&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/rg_near_structure3"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <RadioButton&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/rv_near_structure"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="Yes"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <RadioButton&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/rv_near_the_structure"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="No"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textStyle="bold" />&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                </RadioGroup>&ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_quesionEmuskan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Average shortfall in attendance on daily basis?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_average_shortfall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_button_average_shortfall_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5%"/>
+                    <RadioButton
+                        android:id="@+id/rg_button_average_shortfall_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5-15%"/>
+                    <RadioButton
+                        android:id="@+id/rg_button_average_shortfall_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="15%"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="How effective was teaching through chalk and board method?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_teaching_through"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:layout_marginTop="10sp"                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_very_effective"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Very Effective"/>
+                    <RadioButton
+                        android:id="@+id/rg_effective"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Effective"/>
+                    <RadioButton
+                        android:id="@+id/rg_no_effective"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Not effective"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Did you use any TLM method for teaching?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_TLM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_tlm_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_tlm_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Do you think digital method of education (online mode of teaching) is the future?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:layout_marginTop="10sp"                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_education_online"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Online"/>
+                    <RadioButton
+                        android:id="@+id/rg_education_mixed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Online and offline mixed"/>
+                    <RadioButton
+                        android:id="@+id/rg_offline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Offline"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Do you think the education system in government school needs a pedagogy which involves teaching with the help on digital methods?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_government"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_group_government_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_group_government_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Do you think use of digital methods for teaching will increase attendance in school?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_teaching"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rg_button_teaching_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_button_teaching_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Any Support from the government for e-content/IT infrastructure"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_infrastructure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_button_infrastructure_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_button_infrastructure_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Does digital aid help students to learn fast?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_digital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_button_digital_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_button_digital_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Installation of E-Muskan"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_e_muskan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_butto_e_muskan_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_butto_e_muskan_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="E-Muskan Used Being?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group_e_muskan_being"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_button_e_muskan_being_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_button_e_muskan_being_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Installation of Library?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_installation_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_installation_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Is School Undertaken?"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <RadioGroup
+                    android:id="@+id/rg_group4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_school_undertaken_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_school_undertaken_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is the a kitchen garden?"
+                    android:textColor="#000"
+                    android:textSize="17sp"/>
+                <RadioGroup
+                    android:id="@+id/rg_group5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_group5_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_group5_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is there Science lab?"
+                    android:textColor="#000"
+                    android:textSize="17sp"/>
+                <RadioGroup
+                    android:id="@+id/rg_group6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_group6_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/rg_group6_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="No"/>
+                </RadioGroup>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Description "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/edit_text"
+                android:gravity="center_vertical|top"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Upload Photo "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_baseline_camera_alt_24"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/iv_camera1"
+                        android:layout_width="70dp"
+
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_camera2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_camera3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/btnSubmit"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_search"
+                android:backgroundTint="@color/blue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

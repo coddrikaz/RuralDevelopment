@@ -1,0 +1,51 @@
+<resources>
+    <string name="title_home">Home</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="app_name">Rural Development</string>
+    <string name="title_activity_recycle_add_skill">RecycleAddSkill</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="no_data_pending">No Data Pending</string>
+    <string name="question">You have heard about the company name Jubilant.</string>
+    <string name="question1">आपने अपने क्षेत्र में जुबिलेंट का नाम सुना है?</string>
+    <string name="question2">कंपनी के प्रतिनिधियों ने कंपनी के क्रिया कलापों के बारे में बताया?</string>
+    <string name="question3">जुबिलेंट अपने क्षेत्र में आपात स्थिति से संबंधित कार्यों का प्रबंधन करने के लिए तैयार है</string>
+    <string name="question4">कंपनी अपने क्षेत्र में आपातकालीन तैयारियों से संबंधित मॉक ड्रिल का आयोजन करता हैै</string>
+    <string name="question5">कंपनी के प्रतिनिधियों ने कंपनी के परिचालन बे बारे में आपके चिंताओं को समझने के लिए चर्चा का आयोजन किया है</string>
+    <string name="Please_Enter_Mobile_Number">Please Enter Mobile Number</string>
+    <string name="are_you_sure_to_want_to_exitapplication">Would you like to Exit?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="Village_update_successfully">Village Update Successfully</string>
+    <string name="Village_Update">Village Update</string>
+    <string name="village_update_successfully" />
+
+
+    <string name="profile_desc">Rowan Sebastian Atkinson CBE is an English actor,  comedian and screenwriter</string>
+    <string name="profile_title">Mr Bean</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <!-- font families -->
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_white">sans-serif-white</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="are_you_sure_to_want_to_InActive">Are you sure want to InActive</string>
+</resources>

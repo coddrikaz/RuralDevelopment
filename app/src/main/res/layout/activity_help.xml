@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.Activity.Help">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:text="If You have any query please "
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12dp"
+        android:textStyle="italic"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/helplineinner" />
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="HELPLINE"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Always there to Help you"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtphn"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+91 6264792693"
+                android:textColor="@color/uiColor"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/calling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="130dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/uiColor"
+        android:gravity="center"
+        android:text="Call Now"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:stretchColumns="1,2,3">
+
+        <TableRow tools:ignore="ExtraText">
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/Name"
+                android:layout_column="1"
+                android:maxLength="16"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/table_center"
+                android:text="Members Name"
+                android:textSize="13dp"
+                 />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/MobileNumber"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/table_center"
+                android:text="Mobile Number"
+                android:textSize="13dp"
+
+                />
+
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:id="@+id/Role"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/table_center"
+                android:text="Member Role"
+                android:textSize="13dp"
+
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

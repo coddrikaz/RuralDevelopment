@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:id="@+id/ResourceType"
+                android:layout_column="1"
+                android:background="@drawable/table_center"
+                android:text="Resources Type"
+                android:textSize="13dp" />
+
+
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:maxLength="17"
+                android:id="@+id/ResourceName"
+                android:layout_column="1"
+                android:background="@drawable/table_center"
+                android:text="Resource Name"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:id="@+id/ResourceStatus"
+                android:layout_column="1"
+                android:background="@drawable/table_center"
+                android:text="Resource Status"
+                android:textSize="13dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
